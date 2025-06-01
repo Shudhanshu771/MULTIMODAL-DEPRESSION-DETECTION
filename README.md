@@ -1,6 +1,43 @@
-# Multimodal Depression Detection
+# 🧠 Multimodal Depression Detection System
 
-This project uses multimodal machine learning to detect signs of depression from user inputs including facial expressions, voice, video behavior, text input, and questionnaire responses.
+An intelligent, privacy-conscious system designed to detect signs of **depression** through multiple input types — combining **image, audio, video, text, and questionnaire analysis**. All models used in this project are **custom-trained**, making it suitable for offline use and further development.
+
+---
+
+## 🎯 Objective
+
+To provide an early indication of depressive symptoms by analyzing a user’s behavior across multiple modalities, combining them into a final depression severity score using ensemble techniques.
+
+---
+
+## 💡 Modalities Used
+
+| Modality        | Input Type         | Analysis Method                         |
+|-----------------|--------------------|------------------------------------------|
+| 🖼️ Image         | Facial Expression  | CNN model to infer depressive cues       |
+| 🎤 Audio         | Voice Recording    | Custom-trained audio feature extractor   |
+| 🎥 Video         | Webcam Feed        | Combined audio-visual depression signals |
+| ✍️ Text          | Free-Text Input    | NLP-based depression keyword detection   |
+| 📋 Questionnaire | MCQ + Open-ended   | PHQ-inspired weighted scoring            |
+
+---
+
+## ⚙️ Tech Stack
+
+### 🔙 Backend
+- Python (Flask)
+- TensorFlow / Keras
+- scikit-learn
+- OpenCV
+- librosa
+
+### 🖥️ Frontend
+- React.js
+- Axios (for API communication)
+- Chart.js (graphical results)
+- Tailwind CSS / plain CSS
+
+---
 
 ## 🧠 Modalities
 - **Image Analysis** (Facial expressions)
@@ -13,7 +50,6 @@ This project uses multimodal machine learning to detect signs of depression from
 - **Frontend**: React.js
 - **Backend**: Python (Flask)
 - **ML Models**: Pre-trained models adapted for depression detection
-- **API**: DeepSeek, OpenAI (optional), custom-trained models
 
 ## 🛠 How to Run
 
